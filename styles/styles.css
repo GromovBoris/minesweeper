@@ -1,0 +1,205 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.screenview {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav,
+.records {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background: rgb(150, 250, 150);
+}
+
+.field {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  height: 80vh;
+  width: 80vh;
+  background: rgb(250, 250, 150);
+}
+
+.nav__difflevel,
+.nav__newgame,
+.nav__fieldsize,
+.record,
+.time,
+.click {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  height: 80%;
+  background: rgb(250, 250, 150);
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.disabledview {
+  pointer-events: none;
+}
+
+label,
+.nav__fieldsize,
+.nav__fieldsize__field,
+.nav__fieldsize__field-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+
+button {
+  height: 30px;
+  width: 200px;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #3a6fd9;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+button:hover {
+  background: #0c40a8;
+  font: bold;
+  cursor: pointer;
+}
+button:active {
+  box-shadow: 0px 0px 5px 7px #0c40a8;
+}
+
+.cellcontainer {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 8px;
+  min-width: 8px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 2px;
+  color: white;
+  font-weight: bold;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  margin: 2px;
+}
+.newcell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  margin: 2px;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #3a6fd9;
+  border: 1px solid black;
+  margin: 2px;
+}
+
+.bomb {
+  background-image: url("../icons/bomb_planted.ico");
+  background-size: contain;
+}
+
+.number-1 {
+  color: blue;
+}
+
+.number-2 {
+  color: rgb(25, 239, 125);
+}
+
+.number-3 {
+  color: green;
+}
+
+.number-4 {
+  color: rgb(231, 29, 126);
+}
+
+.number-5 {
+  color: purple;
+}
+
+.number-6 {
+  color: orange;
+}
+
+.number-7 {
+  color: rgb(250, 71, 68);
+}
+
+.number-8 {
+  color: red;
+}
+
+.clicks,
+.timer {
+  font-size: 24px;
+  margin-left: 20px;
+}
+.record {
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  button {
+    font-size: 6px;
+  }
+  .clicks,
+  .timer {
+    font-size: 8px;
+  }
+}
