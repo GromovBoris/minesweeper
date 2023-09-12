@@ -1,5 +1,5 @@
 
-<span style="color:red">**PROJECT IN PROGRESS**</span>
+<span style="color:red">PROJECT IN PROGRESS</span>
 
 # DESCRIPTION
 
