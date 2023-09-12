@@ -1,17 +1,17 @@
 
-## IN PROGRESS...
+# IN PROGRESS...
 
-# DESCRIPTION
+## DESCRIPTION
 
 This repository presents my solutions of minesweeper
 
-# TODO
+## TODO
 
 * function of opening empty cells
-* counting empty cells near by click
+* function of counting empty cells near by click
 * interface design
  
-# CURRENT LINK
+## CURRENT LINK
 https://gromovboris.github.io/minesweeper/
 
 
